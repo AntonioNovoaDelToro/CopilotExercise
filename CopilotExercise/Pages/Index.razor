@@ -1,0 +1,25 @@
+﻿@page "/"
+<!-- 
+I want a homepage to be displayed here. With a centered h1 tag that says "Upload your CSV file:" 
+below that, I want a file upload component that allows the user to upload a CSV file using drag and drop. It could accept
+only CSV files. Below that, I want a button that says "Upload" that will upload the file to the server.
+and a SurveyPrompt component below it. 
+Build the homepage now  
+-->
+
+
+
+
+<PageTitle>Home</PageTitle>                         
+<div class="page">                                                                           
+    <main>                                                                               
+        <article class="content px-4">               
+            <h1 class="text-center">Upload your CSV file</h1>           
+            <div class="file-upload-wrapper">
+                <input type="file" id="file" name="file" accept=".csv" class="file-upload-input" />
+            </div>
+            <button class="btn btn-primary mt-3">Upload</button>                   
+        </article> 
+        <SurveyPrompt Title="How is Blazor working for you?" />                                  
+    </main>
+</div>
